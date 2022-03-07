@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>TEAM DAP</title>
+    <title>WARZONE.AI</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
@@ -19,7 +19,7 @@
                 <span id="widget-member-count">0</span> members online
             </a>
             <div class="server-info d-flex align-items-center flex-column text-center">
-                <h1>TEAM DAP</h1>
+                <h1>WARZONE.AI</h1>
                 <p>The people that brought you WARZONE.AI and CallOfDutyAPI are cooking up something new, but in the meantime join our Discord for a game or two.</p>
                 <a class="links-suppressor join-btn btn-pill white" target="_blank" href="#join">Join Now</a>
             </div>
@@ -27,7 +27,7 @@
     </div>
     <script>
         async function loadWidgetAPI() {
-            const res = await fetch('https://discord.com/api/guilds/377450590575263744/widget.json')
+            const res = await fetch('https://discord.com/api/guilds/729780289727102976/widget.json')
             const { instant_invite, presence_count, members, channels } = await res.json()
             document.getElementById('widget-member-count').innerHTML = presence_count
             document.querySelectorAll('[href="#join"]').forEach(e => e.href = instant_invite)
